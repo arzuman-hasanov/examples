@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tapşırıq 8</h1>
+    <p>Bir metod yaz, iki parametr qəbul edəcək, birinci sözlərdən ibarət bir array, ikinci bir dene herf. Metod həmin arrayin icerisindeki yalniz göndərilən hərflə başlayan sözləri yeni bir array olaraq qaytarmalıdır.</p>
+    <code>
+        <pre>
+            getWord = (array,letter) => {
+                let result = [];
+                for(let i = 0 ; i < array.length ; i++) {
+                    if(array[i][0] == letter) {
+                        result.push(array[i]);
+                    }
+                }
+                console.log(result)
+        
+            }
+        
+            getWord(["salam","dunya","numune","sagol"],"s");
+        </pre>
+    </code>
+    <script>
+        
+        getWord = (array,letter) => {
+        let result = [];
+        for(let i = 0 ; i < array.length ; i++) {
+            if(array[i][0] == letter) {
+                result.push(array[i]);
+            }
+        }
+        console.log(result)
+
+        }
+
+        getWord(["salam","dunya","numune","sagol"],"s");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tapşırıq 5</h1>
+    <p>Sözlərdən ibarət bir arrayi qəbul edib, həmin sözləri vergül ilə birləşdirib tək söz kimi qaytaran funksiya yaz. Ən sonda vergül düşməməlidir.</p>
+    
+    <code>
+        <pre>
+            let array = ["salam","bu","bir","numunedir"];
+            let result = "";
+    
+            for(let i = 0 ; i < array.length ; i++) {
+                
+                if(i == array.length - 1) {
+                    result += array[i];
+                }else {
+                    result += array[i] + ",";
+                }
+            }
+            console.log(result);
+            console.log("array.join('') daha sade bir üsuldur");
+        </pre>
+    </code>
+    
+    <script>
+        
+        let array = ["salam","bu","bir","numunedir"];
+        let result = "";
+
+        for(let i = 0 ; i < array.length ; i++) {
+            
+            if(i == array.length - 1) {
+                result += array[i];
+            }else {
+                result += array[i] + ",";
+            }
+        }
+        console.log(result);
+        console.log("array.join('') daha sade bir üsuldur");
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tapşırıq 7</h1>
+    <p>Sözlərdən ibarət iki arrayi qəbul edib, hər iki array-də olan ortaq sözlərin cəmləşdiyi yeni bir arrayi qaytaran bir funksiya yaz.</p>
+    <code>
+        <pre>
+            let array1 = ["salam","sagol","numune"];
+            let array2 = ["baki","salam","code","numune"];
+            let result = [];
+            for(let i = 0 ; i < array1.length ; i++) {
+                for(let j = 0 ; j < array2.length ; j++) {
+                    if(array1[i] == array2[j]) {
+                        result.push(array1[i]);
+                    }
+                }
+            }
+    
+            console.log(result)
+        </pre>
+    </code>
+    <script>
+        let array1 = ["salam","sagol","numune"];
+        let array2 = ["baki","salam","code","numune"];
+        let result = [];
+        for(let i = 0 ; i < array1.length ; i++) {
+            for(let j = 0 ; j < array2.length ; j++) {
+                if(array1[i] == array2[j]) {
+                    result.push(array1[i]);
+                }
+            }
+        }
+
+        console.log(result)
+    </script>
+</body>
+</html>

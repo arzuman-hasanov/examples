@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tapşırıq 4</h1>
+    <p>Rəqəmlərdən ibarət array qəbul edib, yalnız o rəqəmlərin ortalamasından böyük olan rəqəmlərdən ibarət bir array-i qaytaran bir funksiya yaz.</p>
+    <code>
+        <pre>
+            let array = [1,2,3,4,5,6,7,8,9,10];
+            let over_average = [];
+            let sum = 0;
+            let result;
+    
+            for(let i = 0 ; i < array.length ; i++) {
+                sum += array[i];
+                if(i == array.length - 1) {
+                    result = sum / (i + 1);
+                }
+            }
+    
+            for(let j = 0 ; j < array.length ; j++) {
+                if(array[j] > result) {
+                    over_average.push(array[j])
+                }
+            }
+    
+            console.log(over_average);
+        </pre>
+    </code>
+    <script>
+        
+        let array = [1,2,3,4,5,6,7,8,9,10];
+        let over_average = [];
+        let sum = 0;
+        let result;
+
+        for(let i = 0 ; i < array.length ; i++) {
+            sum += array[i];
+            if(i == array.length - 1) {
+                result = sum / (i + 1);
+            }
+        }
+
+        for(let j = 0 ; j < array.length ; j++) {
+            if(array[j] > result) {
+                over_average.push(array[j])
+            }
+        }
+
+        console.log(over_average);
+
+    </script>
+</body>
+</html>

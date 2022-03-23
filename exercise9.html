@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tapşırıq 9</h1>
+    <p>Bir metod yaz, bir söz qəbul edir və həmin sözdə hansi hərfdən və neçə dənə olduğunu konsola yazdırır.</p>
+    <code>
+        <pre>
+            numberOfLetter = (word) => {
+    
+                for(let i = 0 ; i < word.length ; i++) {
+                
+                    let counter = 0;
+                    for(let j = 0 ; j < word.length ; j++) {
+                        if(word[i] == word[j] && i > j) {
+                            break;
+                        }
+                        if(word[i] == word[j]) {
+                            counter++;
+                        }
+                    }
+                    if(counter > 0) {
+                        console.log(word[i] + ": " + counter + " dəfə")
+                    }
+                }
+                
+                }
+                
+                numberOfLetter("salam");
+        </pre>
+    </code>
+    <script>
+    numberOfLetter = (word) => {
+    
+    for(let i = 0 ; i < word.length ; i++) {
+    
+        let counter = 0;
+        for(let j = 0 ; j < word.length ; j++) {
+            if(word[i] == word[j] && i > j) {
+                break;
+            }
+            if(word[i] == word[j]) {
+                counter++;
+            }
+        }
+        if(counter > 0) {
+            console.log(word[i] + ": " + counter + " dəfə")
+        }
+    }
+    
+    }
+    
+    numberOfLetter("salam");
+    </script>
+</body>
+</html>
